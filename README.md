@@ -17,6 +17,6 @@ Les tests
 - [x] 1 donne “I”
 - [x] les unités simples : 2 et 3
 - [x] Robustesse et cas limites
-- [ ]
+- [x] Première valeur spéciale : 4 –> “IV”
 - [ ]
 

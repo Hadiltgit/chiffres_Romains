@@ -32,5 +32,10 @@ class ChiffresRomainsTest {
 		assertThrows(IllegalArgumentException.class, ()->chiffresRomains.toChiffresRomains(-1));
 		assertThrows(IllegalArgumentException.class, ()->chiffresRomains.toChiffresRomains(3999));
 	}
+	
+	@Test
+	void itr4Test() {
+		assertEquals("IV",chiffresRomains.toChiffresRomains(4));
+	}
 
 }
