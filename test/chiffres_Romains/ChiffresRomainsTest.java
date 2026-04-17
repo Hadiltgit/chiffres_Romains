@@ -21,8 +21,8 @@ class ChiffresRomainsTest {
 	
 	@Test
 	void itr2Test() {
-		assertEquals("2",chiffresRomains.toChiffresRomains(2));
-		assertEquals("3",chiffresRomains.toChiffresRomains(3));
+		assertEquals("II",chiffresRomains.toChiffresRomains(2));
+		assertEquals("III",chiffresRomains.toChiffresRomains(3));
 	}
 
 	
@@ -41,8 +41,8 @@ class ChiffresRomainsTest {
 	@Test
 	void itr5Test() {
 		assertEquals("V",chiffresRomains.toChiffresRomains(5));
-		assertEquals("V",chiffresRomains.toChiffresRomains(6));
-		assertEquals("V",chiffresRomains.toChiffresRomains(8));
+		assertEquals("VI",chiffresRomains.toChiffresRomains(6)); 
+		assertEquals("VIII",chiffresRomains.toChiffresRomains(8)); 
 	}
 	
 	@Test
