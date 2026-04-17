@@ -54,5 +54,11 @@ class ChiffresRomainsTest {
 	void itr7Test() {
 		assertEquals("XXX",chiffresRomains.toChiffresRomains(30));
 	}
+	
+	@Test
+	void itr8Test() {
+		assertEquals("XI",chiffresRomains.toChiffresRomains(11));
+		assertEquals("XXXIV",chiffresRomains.toChiffresRomains(34));
+	}
 
 }

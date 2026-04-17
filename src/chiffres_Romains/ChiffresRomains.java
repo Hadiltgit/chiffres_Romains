@@ -17,20 +17,27 @@ public class ChiffresRomains {
 				return SYMBOLES[i];
 			}
 		}
-		int k = nombre - VALEURS[i-1];
-		StringBuilder result = new StringBuilder(SYMBOLES[i-1]);
-		String c;
-		if(nombre<10) {
-			c = "I";
-		}else {
-			k = k/10;
-			c = "X";
-		}
-	    while(k>0) {
-		    	result.append(c);
+		 StringBuilder result = new StringBuilder();
+		if(nombre<=10) {
+			int k = nombre - VALEURS[i-1];
+		    result.append(SYMBOLES[i-1]);
+		    while(k>0) {
+		    	result.append("I");
 		    	k=k-1;
+		    }
+		    return result.toString();
+		}else {
+			while(nombre>10) {
+				nombre = nombre-10;
+				result.append("X");
+			}
+			if(nombre == 0) {
+				return result.toString();
+			}else {
+				result.append(toChiffresRomains(nombre));
+			}
+		    return result.toString();
 		}
-		return result.toString();
 		
 	}
 
