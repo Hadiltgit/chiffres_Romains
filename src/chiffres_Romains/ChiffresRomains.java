@@ -7,6 +7,9 @@ public class ChiffresRomains {
 		if (nombre == 1) {
 			return "I";
 		}
+		if(nombre <=0 || nombre >=3999) {
+			throw new IllegalArgumentException("argument non valide");
+		}
 		return String.format("%d", nombre);
 	}
 	
