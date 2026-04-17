@@ -38,4 +38,11 @@ class ChiffresRomainsTest {
 		assertEquals("IV",chiffresRomains.toChiffresRomains(4));
 	}
 
+	@Test
+	void itr5Test() {
+		assertEquals("V",chiffresRomains.toChiffresRomains(5));
+		assertEquals("V",chiffresRomains.toChiffresRomains(6));
+		assertEquals("V",chiffresRomains.toChiffresRomains(8));
+	}
+
 }

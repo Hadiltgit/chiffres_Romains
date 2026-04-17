@@ -18,5 +18,5 @@ Les tests
 - [x] les unités simples : 2 et 3
 - [x] Robustesse et cas limites
 - [x] Première valeur spéciale : 4 –> “IV”
-- [ ]
+- [x] La valeur 5 et au-delà : 5, 6, 8
 

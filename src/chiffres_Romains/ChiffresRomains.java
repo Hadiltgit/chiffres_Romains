@@ -2,12 +2,12 @@ package chiffres_Romains;
 
 public class ChiffresRomains {
 
-	private String[] magicKey= {"I","IV"};
-	private int[] magicValues= { 1 , 4};
+	private String[] magicKey= {"I","IV","V","V","V"};
+	private int[] magicValues= { 1 , 4 , 5 , 6 , 8};
 	
 	public String toChiffresRomains(int nombre) {
 		
-		if(nombre <=0 || nombre >=3999) {
+		if(!nonValide(nombre)) {
 			throw new IllegalArgumentException("argument non valide");
 		}
 		
@@ -20,4 +20,10 @@ public class ChiffresRomains {
 		return String.format("%d", nombre);
 	}
 	
+	public boolean nonValide(int nbr) {
+		if(nbr <=0 || nbr >=3999) { 
+			return false;
+		}
+		return true;
+	}
 }
