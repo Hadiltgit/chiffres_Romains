@@ -30,7 +30,7 @@ class ChiffresRomainsTest {
 	void itr3Test() {
 		assertThrows(IllegalArgumentException.class, ()->chiffresRomains.toChiffresRomains(0));
 		assertThrows(IllegalArgumentException.class, ()->chiffresRomains.toChiffresRomains(-1));
-		assertThrows(IllegalArgumentException.class, ()->chiffresRomains.toChiffresRomains(3999));
+		assertThrows(IllegalArgumentException.class, ()->chiffresRomains.toChiffresRomains(4000));
 	}
 	
 	@Test
@@ -59,6 +59,17 @@ class ChiffresRomainsTest {
 	void itr8Test() {
 		assertEquals("XI",chiffresRomains.toChiffresRomains(11));
 		assertEquals("XXXIV",chiffresRomains.toChiffresRomains(34));
+	}
+	
+	@Test
+	void itr9Test() {
+		assertEquals("C",chiffresRomains.toChiffresRomains(100));
+		assertEquals("MM",chiffresRomains.toChiffresRomains(2000));
+		assertEquals("MCMXCIV",chiffresRomains.toChiffresRomains(1994));
+		assertEquals("MMXXIV",chiffresRomains.toChiffresRomains(2024));
+		assertEquals("MMMCMXCIX",chiffresRomains.toChiffresRomains(3999));
+		assertEquals("LVIII",chiffresRomains.toChiffresRomains(58));
+		assertEquals("DCXLVIII",chiffresRomains.toChiffresRomains(648));
 	}
 
 }

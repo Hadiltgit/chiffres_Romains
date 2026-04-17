@@ -11,38 +11,20 @@ public class ChiffresRomains {
 			throw new IllegalArgumentException("argument non valide");
 		}
 
-		int i;
-		for (i = 0; i < VALEURS.length && nombre >= VALEURS[i] ; i++) {
-			if (nombre == VALEURS[i]) {
-				return SYMBOLES[i];
-			}
-		}
-		 StringBuilder result = new StringBuilder();
-		if(nombre<=10) {
-			int k = nombre - VALEURS[i-1];
-		    result.append(SYMBOLES[i-1]);
-		    while(k>0) {
-		    	result.append("I");
-		    	k=k-1;
-		    }
-		    return result.toString();
-		}else {
-			while(nombre>10) {
-				nombre = nombre-10;
-				result.append("X");
-			}
-			if(nombre == 0) {
-				return result.toString();
-			}else {
-				result.append(toChiffresRomains(nombre));
-			}
-		    return result.toString();
-		}
-		
+		StringBuilder result = new StringBuilder();
+
+	    for (int i = VALEURS.length - 1; i >= 0; i--) {
+	        while (nombre >= VALEURS[i]) {
+	            result.append(SYMBOLES[i]);
+	            nombre -= VALEURS[i];
+	        }
+	    }
+
+	    return result.toString();
 	}
 
 	public boolean nonValide(int nbr) {
-		if (nbr <= 0 || nbr >= 3999) {
+		if (nbr <= 0 || nbr > 3999) {
 			return false;
 		}
 		return true;
