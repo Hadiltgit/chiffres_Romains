@@ -44,5 +44,10 @@ class ChiffresRomainsTest {
 		assertEquals("V",chiffresRomains.toChiffresRomains(6));
 		assertEquals("V",chiffresRomains.toChiffresRomains(8));
 	}
+	
+	@Test
+	void itr6Test() {
+		assertEquals("IX",chiffresRomains.toChiffresRomains(9));
+	}
 
 }

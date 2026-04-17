@@ -19,4 +19,5 @@ Les tests
 - [x] Robustesse et cas limites
 - [x] Première valeur spéciale : 4 –> “IV”
 - [x] La valeur 5 et au-delà : 5, 6, 8
+- [x] Deuxième cas soustractif : 9 –> “IX”
 

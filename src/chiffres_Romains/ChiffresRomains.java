@@ -2,8 +2,8 @@ package chiffres_Romains;
 
 public class ChiffresRomains {
 
-	private String[] magicKey= {"I","IV","V","V","V"};
-	private int[] magicValues= { 1 , 4 , 5 , 6 , 8};
+	private String[] magicKey= {"I","IV","V","V","V","IX"};
+	private int[] magicValues= { 1 , 4 , 5 , 6 , 8 , 9};
 	
 	public String toChiffresRomains(int nombre) {
 		
