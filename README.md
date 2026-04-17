@@ -15,7 +15,7 @@
 - [ ] B22
 Les tests
 - [x] 1 donne “I”
-- [ ]
+- [x] les unités simples : 2 et 3
 - [ ]
 - [ ]
 - [ ]

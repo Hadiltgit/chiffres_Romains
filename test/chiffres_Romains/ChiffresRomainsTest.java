@@ -15,8 +15,14 @@ class ChiffresRomainsTest {
 	}
 
 	@Test
-	void toChiffresRomainsTest() {
+	void itr1Test() {
 		assertEquals("I",chiffresRomains.toChiffresRomains(1));
+	}
+	
+	@Test
+	void itr2Test() {
+		assertEquals("2",chiffresRomains.toChiffresRomains(2));
+		assertEquals("3",chiffresRomains.toChiffresRomains(3));
 	}
 
 }

@@ -4,7 +4,10 @@ public class ChiffresRomains {
 
 	
 	public String toChiffresRomains(int nombre) {
-		return "I";
+		if (nombre == 1) {
+			return "I";
+		}
+		return String.format("%d", nombre);
 	}
 	
 }
